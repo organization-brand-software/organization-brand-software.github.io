@@ -1,0 +1,283 @@
+
+
+
+
+.preloader_class{
+    width: 100px;
+    height: 100px;
+}
+
+
+.avatar{
+    height: 5%;
+    width: 5%;
+}
+
+@media (min-width:300px) and (max-width:1040px) {
+    .preloader_class{
+        width: 10px;
+        height: 10px;
+    }
+   
+    .avatar{
+        position: relative;
+        height: 30%;
+        width: 30%;
+        top: 2px;
+        margin: 0px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fbfbfb url('style/img/organization brand by_avata_blackr.png') no-repeat center center;
+}
+
+
+@media (min-width:300px) and (max-width:1040px) {
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: url('style/img/organization\ brand\ by_avatar_mb.png') no-repeat center center;
+}
+}
+  
+.visible {
+visibility: visible;
+opacity: 1;
+
+
+}
+
+.hidden {
+visibility: hidden;
+opacity: 0;
+transition: visibility 0s 3s, opacity 2s linear;
+}
+
+
+
+.heart {
+animation: heartbeat 1s infinite;
+background-color: red;
+display: inline-block;
+height: 500px;
+
+position: relative;
+top: 0;
+transform: rotate(0deg);
+position: absolute; 
+left: 50%; top: 50%;
+width: 500px;
+}
+
+.heart:before,
+.heart:after {
+content: "";
+
+
+height: 50px;
+position: absolute;
+width: 50px;
+}
+
+.heart:before {
+top: 0;
+left: 0;
+}
+
+.heart:after {
+left: 0px;
+top: 0;
+}
+@keyframes heartbeat {
+  0% {
+      transform: scale3d(1, 1, 1);
+  }
+  50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+      transform: scale3d(1, 1, 1);
+  }
+
+}
+
+
+  @media (min-width:300px) and (max-width:1040px) {
+      
+      .heart {
+animation: heartbeat 1s infinite;
+background-color: red;
+display: inline-block;
+
+top: 0;
+transform: rotate(0deg);
+position: absolute; 
+left: 50%; top: 50%;
+height: auto;
+width: auto;
+}
+
+.heart:before,
+.heart:after {
+content: "";
+
+
+height: 10px;
+position: absolute;
+width: 10px;
+}
+
+.heart:before {
+top: 0;
+left: 0;
+}
+
+.heart:after {
+left: 0px;
+top: 0;
+}
+@keyframes heartbeat {
+  0% {
+      transform: scale3d(1, 1, 1);
+  }
+  50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+      transform: scale3d(1, 1, 1);
+  }
+
+}
+
+  }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 80%;
+    }
+  }
+
+
+
+
+
+ .text_start{
+    position: relative; 
+    
+    padding:15px 15px 25px;
+    font-size:30px;
+    margin-top:30px;
+ }
+
+ @media (min-width:300px) and (max-width:1040px) {
+    .text_start{
+        position: relative; 
+        
+        padding:15px 15px 25px;
+        font-size:30px;
+        margin-top:30px;
+     }
+
+ }
+
+
+
+ .card {
+     display:inline-block;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 40%;
+      border-radius: 5px;
+  }
+
+  @media (min-width:300px) and (max-width:1040px) {
+    .card {
+      display:inline-block;
+       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+       transition: 0.3s;
+       width: 90%;
+       border-radius: 5px;
+   }
+  }
+  
+  .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  img {
+      border-radius: 5px 5px 0 0;
+  }
+  
+  .container {
+      padding: 2px 16px;
+  }
+  
+
+
+
+
+
+
